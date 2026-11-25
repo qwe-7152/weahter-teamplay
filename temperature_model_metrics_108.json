@@ -1,0 +1,37 @@
+{
+  "station": "108",
+  "target": "hourly air temperature (TA, degrees C)",
+  "model": "ordinary least squares linear regression",
+  "features": [
+    "trend_years",
+    "daily_sin",
+    "daily_cos",
+    "annual_sin",
+    "annual_cos",
+    "semiannual_sin",
+    "semiannual_cos"
+  ],
+  "requested_training_period": [
+    "202301010000",
+    "202609302300"
+  ],
+  "actual_training_period": [
+    "202311250000",
+    "202609302300"
+  ],
+  "training_observations": 24935,
+  "requested_holdout_period": [
+    "202610010000",
+    "202612312300"
+  ],
+  "actual_holdout_period": [
+    "202610010000",
+    "202611251200"
+  ],
+  "holdout_observations": 1333,
+  "holdout_mae_c": 3.371089857298255,
+  "holdout_rmse_c": 4.003779920538743,
+  "holdout_r2": 0.6630254299719273,
+  "december_has_actual_observations": false,
+  "forecast_csv": "temperature_forecast_108_202610-202612.csv"
+}
